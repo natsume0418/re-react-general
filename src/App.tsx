@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './input.css'
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import {
+  Top, Registration, Login, ArticlePost, MyPage, ArticleDetail, ArticleList, InformationChange, NotFound
+} from './components/Pages/Index';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return(
+  <Router>
+    <Routes>
+      <Route path='/' element={<Top/>}/>
+      <Route path='/Registration' element={<Registration/>}/>
+      <Route path='/Login' element={<Login/>}/>
+      <Route path='/MyPage' element={<MyPage/>}/>
+      <Route path='/ArticlePost' element={<ArticlePost/>}/>
+      <Route path='/ArticleDetail' element={<ArticleDetail/>}/>
+      <Route path='/ArticlrList' element={<ArticleList/>}/>
+      <Route path='/InformationChange' element={<InformationChange/>}/>
+      <Route path='/Notfound' element={<NotFound/>}/>
+    </Routes>
+  </Router>
+  )
 }
 
 export default App;

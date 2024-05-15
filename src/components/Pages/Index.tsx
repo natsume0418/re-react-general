@@ -1,0 +1,9 @@
+export { default as Top } from './Top';
+export { default as Registration } from './Registration';
+export { default as Login } from './Login';
+export { default as ArticlePost } from './ArticlePost';
+export { default as MyPage } from './MyPage';
+export { default as ArticleDetail } from './ArticleDetail';
+export { default as ArticleList } from './ArticleList';
+export { default as InformationChange } from './InformationChange';
+export { default as NotFound } from '../../NotFound';

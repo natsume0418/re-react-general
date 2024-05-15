@@ -1,0 +1,31 @@
+/* ハンバーガーバー */
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* ハンバーガーバーが開いたときのスタイル */
+.bar.open:nth-child(1) {
+    transform: rotate(-45deg) translate(-6px, 5px);
+    width: 30px;
+}
+
+.bar.open:nth-child(2) {
+    opacity: 0;
+}
+
+.bar.open:nth-child(3) {
+    transform: rotate(45deg) translate(-7px, -7px);
+    width: 30px;
+}
+
+.burger-icon {
+    position:absolute;
+    top: 12px;
+    right: 10px;
+
+}
+
